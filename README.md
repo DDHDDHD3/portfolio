@@ -49,8 +49,7 @@ cd portfolio
 Create a `.env` file in the root directory (optional, system uses defaults in docker-compose):
 ```env
 PORT=3000
-DATABASE_URL=postgres://postgres:postgres_secure_password@postgres:5432/portfolio_db
-SECRET_KEY=your_secure_jwt_secret
+DATABASE_URL=postgres:
 ```
 
 ### 3. Start the Application
@@ -65,8 +64,8 @@ docker compose up --build
 - **Admin Dashboard**: [http://localhost:4200/#/admin](http://localhost:4200/#/admin)
 
 ## 🔑 Admin Credentials (Default)
-- **Username**: `admin`
-- **Password**: `admin_secure_password`
+- **Username**: ``
+- **Password**: ``
 
 ---
 
