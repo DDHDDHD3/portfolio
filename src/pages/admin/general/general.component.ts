@@ -16,7 +16,7 @@ import { NotificationService } from '../../../services/notification.service';
       </div>
 
       <form [formGroup]="profileForm" (ngSubmit)="save()" class="space-y-6">
-        <div class="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 space-y-8">
+        <div class="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-gray-100 space-y-8">
           <div class="grid md:grid-cols-2 gap-8">
             <div class="space-y-3">
               <label class="text-xs font-bold text-gray-500 uppercase tracking-widest ml-1">Full Name</label>

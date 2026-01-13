@@ -49,8 +49,8 @@ import { NotificationService } from '../../../services/notification.service';
 
       <!-- Project Modal (Overlay) -->
       @if (showModal) {
-        <div class="fixed inset-0 bg-gray-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div class="bg-white w-full max-w-3xl rounded-[2.5rem] shadow-2xl p-8 md:p-12 space-y-10 max-h-[90vh] overflow-y-auto animate-scale-in">
+        <div class="fixed inset-0 bg-gray-900/60 backdrop-blur-sm z-[60] flex items-center justify-center p-0 sm:p-4 transition-all duration-300">
+          <div class="bg-white w-full h-full sm:h-auto sm:max-w-4xl sm:rounded-[2.5rem] shadow-2xl p-6 md:p-12 space-y-8 overflow-y-auto animate-fadescale">
             <div class="flex justify-between items-center border-b border-gray-100 pb-6">
               <div>
                 <h2 class="text-3xl font-black text-gray-900 tracking-tight">{{ editingId === null ? 'Add New Project' : 'Edit Project' }}</h2>

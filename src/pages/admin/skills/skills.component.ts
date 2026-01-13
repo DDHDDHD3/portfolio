@@ -28,7 +28,7 @@ import { NotificationService } from '../../../services/notification.service';
                 <span class="text-[10px] font-black text-blue-600 uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full">Category #{{ catIndex + 1 }}</span>
                 <div class="flex items-center gap-3">
                   <h3 class="text-2xl md:text-3xl font-black text-gray-900 tracking-tight">{{ category.title }}</h3>
-                  <button (click)="editCategoryTitle(catIndex)" class="opacity-0 group-hover/title:opacity-100 p-2 text-gray-400 hover:text-blue-500 transition-all">
+                  <button (click)="editCategoryTitle(catIndex)" class="opacity-100 md:opacity-0 md:group-hover/title:opacity-100 p-2 text-gray-400 hover:text-blue-500 transition-all">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
                   </button>
                 </div>
@@ -42,11 +42,11 @@ import { NotificationService } from '../../../services/notification.service';
               @for (skill of category.skills; track skillIndex; let skillIndex = $index) {
                 <div class="p-6 rounded-[2rem] bg-gray-50/50 border border-gray-100 flex items-center justify-between group hover:bg-white hover:shadow-2xl hover:shadow-blue-500/10 transition-all min-h-[100px] gap-4">
                   <span class="font-bold text-gray-800 text-base md:text-lg leading-snug flex-1">{{ skill.name }}</span>
-                  <div class="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all">
-                    <button (click)="editSkill(catIndex, skillIndex)" class="p-2 bg-blue-50 text-blue-500 rounded-xl hover:bg-blue-100" title="Edit Skill">
+                  <div class="flex items-center gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all">
+                    <button (click)="editSkill(catIndex, skillIndex)" class="p-3 bg-blue-50 text-blue-500 rounded-xl hover:bg-blue-100" title="Edit Skill">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
                     </button>
-                    <button (click)="removeSkill(catIndex, skillIndex)" class="p-2 bg-red-50 text-red-500 rounded-xl hover:bg-red-100" title="Remove Skill">
+                    <button (click)="removeSkill(catIndex, skillIndex)" class="p-3 bg-red-50 text-red-500 rounded-xl hover:bg-red-100" title="Remove Skill">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                     </button>
                   </div>
